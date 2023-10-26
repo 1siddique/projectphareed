@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}" >
+
+</head>
+<body>
+
+{%  block hedear %}
+
+<h1 class="py-0 text-center"> 3RI Technologies</h1>
+<h2 style="margin-left:1170px;margin-top:60px">PHAREED!!!</h2>
+<img src="{% static 'img/3RI.jpg' %}" width="200px" height="150px" style="margin-top:-100px; radius:5px">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'index' %}">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'Aboutus' %}">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'contact' %}">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'course' %}">Courses Offered</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'signin' %}"> Sing Out</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'SingUp' %}"> Sing Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'signin' %}">sing In</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock  %}
+
+{% block content %}
+<img src="{% static 'img/img3.jpg' %}" width="265px" height="250px" class="rounded float-start" alt="...">
+<img src="{% static 'img/img3.jpg' %}" width="265px" height="250px" class="rounded float-start" alt="...">
+  <img src="{% static 'img/img3.jpg' %}" width="265px" height="250px" class="rounded float-start" alt="...">
+<img src="{% static 'img/img3.jpg' %}" width="265px" height="250px" class="rounded float-start" alt="...">
+<img src="{% static 'img/img3.jpg' %}" width="265px" height="250px" class="rounded float-start" alt="...">
+
+
+<div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'img/img3.jpg' %}" width="265px" height="250px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Industry Expert Trainers</h5>
+        <p class="card-text">Highly Qualified and Industry Experience Professionals for providing Real-Time Scenario </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'img/img3.jpg' %}" width="265px" height="250px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Flexible Batches</h5>
+        <p class="card-text">Multiple Batches & Support Systems to make sure you can learn according to your convenience</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'img/img3.jpg' %}" width="265px" height="250px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">100% Placement Assistance</h5>
+        <p class="card-text">After Training Completion we provide job Assistance Scheduled interview for every individual.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+
+    </div>
+
+
+{% endblock %}
+
+
+{% block footer %}
+<footer class="bg-green text- light position-relative fixed-bottom" >
+  <h1 class="text-center py-2 my-0 "> Our Clients </h1>
+<div class="py-10 " style="margin-left:30px;  ">
+  <img src="{% static 'img/cissco.jpg' %}" width="250px" height="250px" class="rounded float-start" alt="...">
+<img src="{% static 'img/hcl.jpg' %}" width="250px" height="250px" class="rounded float-start" alt="..."><img src="{% static 'img/TCS.jpg' %}" width="250px" height="250px" class="rounded float-start" alt="...">
+<img src="{% static 'img/Wipro.jpg' %}" width="290px" height="250px" class="rounded float-start" alt="...">
+<img src="{% static 'img/mahindra.jpg' %}" width="250px" height="250px" class="rounded float-start" alt="...">
+
+</footer>
+{% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

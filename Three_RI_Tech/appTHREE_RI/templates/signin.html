@@ -1,0 +1,32 @@
+{% extends 'basic.html' %}
+{% block content %}
+{% load static %}
+
+<h2 class="text-center">Welcome To 3RI Technologies</h2>
+<img src="{% static 'img/image2.jpg' %} " width="480px " height="400px" class="img-fluid py-10 enter" alt="...">
+
+<body style="#">
+<form method="POST"  novalidate  class="btn btn-secondary "   >
+           <center>
+            <table style="margin-top:-1 bg:red">
+
+     {% csrf_token %}
+     {% for fm in form  %}
+                <tr>
+                    <td>{{fm.label_tag}}</td>
+                    <td>{{fm}}</td>
+                    <td>{{fm.errors}}</td><br>
+    </tr>
+     {% endfor %}
+                 </table>
+           </center><br>
+    <center>
+     <input type="submit"  value="Signin" class="btn btn-success" style="margin-left:50px; ">
+</center>
+</form>
+<img src="{% static 'img/image1.jpg' %} " width="500px " height="400px" class="img-fluid py-10 enter" alt="...">
+
+{% endblock %}
+</body>
+
+

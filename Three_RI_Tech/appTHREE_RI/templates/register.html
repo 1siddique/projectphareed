@@ -1,0 +1,30 @@
+{% extends 'basic.html' %}
+{% block content %}
+    {% load static %}
+
+
+<body style="#">
+
+ <img src="{% static 'img/student1.jpg' %}" width="265px" height="450px" class="card-img-top" alt="...">
+
+<center><form method="POST"  novalidate  class="btn btn-secondary "   >
+           <center>
+            <table style="margin-top:-1 bg:red">
+
+     {% csrf_token %}
+     {% for fm in form  %}
+                <tr>
+                    <td>{{fm.label_tag}}</td>
+                    <td>{{fm}}</td>
+                    <td>{{fm.errors}}</td><br>
+    </tr>
+     {% endfor %}
+                 </table>
+           </center><br>
+    <center>
+     <input type="submit"  value="Register" class="btn btn-success" style="margin-left:50px; ">
+</center>
+</form></center>
+
+{% endblock %}
+</body>
